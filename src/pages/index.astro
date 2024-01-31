@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import Linkedin from '../icons/Linkedin.astro';
+import Github from '../icons/Github.astro';
+import SocialPill from '../components/SocialPill.astro'
+import Email from '../icons/Email.astro'
+import CV from '../icons/CV.astro';
+import CvPill from '../components/CvPill.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+---
+
+<Layout title="Portfolio de Agustin Nicolas Mancini - Full Stack Developer" description='Agustin Nicolas Mancini desarrollador web full-stack'>
+	<main class="px-4 ">
+		<SectionContainer class="py-44 pb-24" >
+			<h1 class="text-white max-[484px]:text-xl text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-5 pb-6 lg:pb-10">¡Hola!, soy Agustín <a href="https://www.linkedin.com/in/agust%C3%ADn-nicol%C3%A1s-mancini/" target="_blank" rel="noopener" class="flex justify-center items-center"><Badge>Disponible para trabajar</Badge></a></h1>
+			<h2 class="max-[484px]:text-base text-xl lg:text-2xl opacity-80 pb-3 max-w-[700px] text-pretty">Desarrollador web Full-Stack.
+				De <span class="text-blue-400/90">Buenos Aires, Argentina</span>. Especializado en Front-End.
+			</h2>
+
+			<nav class="flex gap-2 flex-wrap">
+				<SocialPill href="https://www.linkedin.com/in/agust%C3%ADn-nicol%C3%A1s-mancini/">
+					<Linkedin/>
+					LinkedIn
+				</SocialPill>
+				
+				<SocialPill href="https://github.com/agusssrs">
+					<Github/>
+					GitHub
+				</SocialPill>	
+				
+				<SocialPill href="mailto:agustinmancini2@hotmail.com">
+					<Email/>
+					agustinmancini2@hotmail.com
+				</SocialPill>
+
+				<SocialPill href="https://drive.google.com/file/d/1AH2i0lkDgUll5duVb9LVpJd1oa4w-ew5/view?usp=sharing">
+					<CV/>
+					Mi curriculum
+				</SocialPill>
+
+
+			</nav>
+		</SectionContainer>	
+		
+		<SectionContainer id="projects">
+
+		</SectionContainer>
+	</main>
+</Layout>
+
+
