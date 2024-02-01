@@ -8,6 +8,8 @@ import Email from '../icons/Email.astro'
 import CV from '../icons/CV.astro';
 import SectionContainer from '../components/SectionContainer.astro';
 import Code from '../icons/Code.astro';
+import Projects from '../components/Projects.astro';
+import AboutMe from '../components/AboutMe.astro'
 ---
 
 <Layout title="Portfolio de Agustin Nicolas Mancini - Full Stack Developer" description='Agustin Nicolas Mancini desarrollador web full-stack'>
@@ -44,10 +46,18 @@ import Code from '../icons/Code.astro';
 		</SectionContainer>	
 		
 		<SectionContainer id="projects">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
 				<Code class="size-7"/>
 				Proyectos
 			</h2>
+			<Projects/>
+		</SectionContainer>
+
+		<SectionContainer id="about-me" class="mb-20">
+			<h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+				Acerca de mi
+			</h2>
+			<AboutMe/>
 		</SectionContainer>
 	</main>
 </Layout>
